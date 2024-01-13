@@ -1,0 +1,146 @@
+.about {
+  padding: 100px 15px;
+  background-color: #fff;
+}
+
+.img {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.img img {
+  width: 60%;
+  border-radius: 4px;
+  display: block;
+}
+
+.text {
+  flex: 0 0 70%;
+  max-width: 50%;
+  padding-left: 20px;
+}
+
+
+.text h4 {
+  font-size: 25px;
+  font-weight: 600;
+  margin: 0 0 10px;
+  color: #000;
+}
+
+.text h6 {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0 0 25px;
+  color: #000;
+}
+
+.text h6 span {
+  color: #5f88e0;
+  position: relative;
+}
+
+.text h6 span::before {
+  content: "";
+  left: 0;
+  right: 90%;
+  position: absolute;
+  height: 2px;
+  bottom: 0px;
+  transition: all 0.5s ease;
+}
+
+.text h6 span:hover::before {
+  content: "";
+  left: 0;
+  right: 0;
+  position: absolute;
+  height: 2px;
+  background-color: #5f88e0;
+  bottom: 0px;
+}
+
+.text p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #838383;
+}
+
+
+.skills h6 {
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0 0 25px;
+  color: #000;
+}
+
+.skills-list {
+  width: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.fa-ul li {
+  font-size: 14px;
+  font-weight: 400;
+  color: navy;
+}
+
+.fa-ul .fa-li {
+  font-size: 12px;
+  font-weight: 300;
+  color:maroon;
+}
+
+.tab-titles{
+  display: flex;
+  font-size: 18px;
+  font-weight: 400;
+  color: maroon;
+  margin: 18px 0 20px;
+  margin-right: 0px;
+}
+
+.tab-links{
+    margin: 30px;
+    font-size: 10px;
+    font-weight: 400;
+    cursor: pointer;
+    position: relative;
+    color: darkred;
+}
+.tab-links::after{
+    content:'';
+    width: 0;
+    height: 3px;
+    background: navy;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab-links.active-link::after{
+    width: 100%;
+}
+
+.tab-contains ul li{
+    list-style: none;
+    margin: 10px 0;
+    
+}
+.tab-contains ul li span{
+    color: darkred;
+    font-weight: 400;
+    font-size: 14px;
+    margin: 10px 0;
+}
+.tab-contains{
+  margin-left: 0px;
+  margin-top: 5px;
+    display: none;
+    font-weight: 450;
+}
+.tab-contains.active-tab{
+    display: block;
+}
