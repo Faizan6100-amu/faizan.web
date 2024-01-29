@@ -14,6 +14,13 @@ body {
   background-color: rgb(236, 241, 250);
 }
 
+/* Example CSS for touch-friendly buttons */
+.touch-friendly-button {
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -185,7 +192,7 @@ nav .fas{
     padding-left: 0px;
     padding-top: 30px;
   }
-/*  */
+
   .about-content .row .text h6{
     font-size: 14px;
   }
@@ -241,6 +248,14 @@ nav .fas{
 }
 
 @media(max-width: 500px) {
+#home{
+  background-image: url("../img/phone.png");
+}
+
+.full-screen {
+  max-height: 50vh;
+}
+
   .home .home-content .block {
     padding-left: 20px;
   }
